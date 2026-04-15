@@ -22,3 +22,13 @@ let value = "Hello World";
 if (typeof value === "string") {
   console.log(value.toLocaleUpperCase());
 }
+
+/**
+ * void type
+ * ! when a fucntion has no return that time we use void type
+ */
+
+function logMessage(): void {
+  console.log("Logged In Successfully");
+}
+logMessage();
