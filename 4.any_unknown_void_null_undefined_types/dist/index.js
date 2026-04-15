@@ -29,4 +29,15 @@ function logMessage() {
     console.log("Logged In Successfully");
 }
 logMessage();
+//------------------------------------
+/**
+ * ! Null => No Value
+ */
+let number = null;
+console.log(number);
+/**
+ * ! Undefined => if a variable has type but no value its called Undefined
+ */
+let name;
+console.log(name);
 //# sourceMappingURL=index.js.map

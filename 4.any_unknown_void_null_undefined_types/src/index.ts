@@ -32,3 +32,17 @@ function logMessage(): void {
   console.log("Logged In Successfully");
 }
 logMessage();
+
+//------------------------------------
+
+/**
+ * ! Null => No Value
+ */
+let number: null = null;
+console.log(number);
+
+/**
+ * ! Undefined => if a variable has type but no value its called Undefined
+ */
+let name: undefined;
+console.log(name);
