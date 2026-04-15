@@ -34,6 +34,6 @@ function displayStudentData(student) {
     console.log(`Age: ${student.age}`);
     console.log(`Courses: ${student.courses.join("+")}`);
 }
-// displayStudentData(student1);
+displayStudentData(student1);
 displayStudentData(student2);
 //# sourceMappingURL=index.js.map
