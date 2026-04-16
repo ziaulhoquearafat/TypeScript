@@ -25,28 +25,27 @@ type Student = {
 
 const student1: Student = {
   name: "Hablu",
-  age: 50,
+  age: 27,
   isEnrolled: true,
   courses: ["JavaScript", "TypeScript", "React", "NextJs"],
-  scores: [80, 85, 79, 98],
-  info: ["Hablu", 50, true],
+  scores: [79, 95, 82, 98],
+  info: ["Hablu", 27, true],
 };
 
 const student2: Student = {
   name: "Bablu",
-  age: 45,
+  age: 24,
   isEnrolled: true,
   courses: ["JavaScript", "TypeScript", "React", "NextJs"],
-  scores: [85, 98, 87, 95],
-  info: ["Balbu", 45, true],
+  scores: [87, 95, 92, 98],
+  info: ["Bablu", 24, true],
 };
 
-function displayStudentData(student: Student): void {
-  console.log(student1);
-  console.log(student2);
+function studentData(student: Student): void {
   console.log(`Name: ${student.name}`);
-  console.log(`Age: ${student.age}`);
-  console.log(`Courses: ${student.courses.join("+")}`);
+  console.log(`Name: ${student.age}`);
+  console.log(`Name: ${student.courses.join("+")}`);
+  console.log(student2);
 }
-// displayStudentData(student1);
-displayStudentData(student2);
+studentData(student1);
+studentData(student2);
