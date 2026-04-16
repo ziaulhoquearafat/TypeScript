@@ -10,3 +10,11 @@ console.log(greetings("Mr", "Alice"));
 console.log(greetings("Mr", "Hablu", "Doctor"));
 
 //--------------------------------
+
+// Default Parameter
+
+function welcomeMessage(name: string = "Guest"): string {
+  return `Hello ${name}`;
+}
+console.log(welcomeMessage());
+console.log(welcomeMessage("Bablu"));
