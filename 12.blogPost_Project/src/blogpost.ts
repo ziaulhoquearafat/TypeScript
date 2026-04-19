@@ -6,7 +6,7 @@ type BlogPost = {
   description: string;
   author: string;
   published: boolean;
-  publishDate?: string;
+  publishDate: string;
 };
 
 const blogPost1: BlogPost = {
@@ -17,7 +17,6 @@ const blogPost1: BlogPost = {
   published: true,
   publishDate: "2025-04-19",
 };
-
 const blogPost2: BlogPost = {
   id: 1,
   title: "Top 10 SEO Tools",
@@ -27,10 +26,8 @@ const blogPost2: BlogPost = {
   published: true,
   publishDate: "2025-04-23",
 };
-
 function myPost(post: BlogPost): void {
   const { title, description, author, published, publishDate } = post;
-
   console.log(`Title: ${title}`);
   console.log(`Description: ${description}`);
   console.log(`author: ${author}`);
