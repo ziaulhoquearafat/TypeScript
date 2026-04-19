@@ -15,7 +15,7 @@ printData(student);
 
 type User = {
   name: string;
-  age: number;
+  age?: number; // age is optional
 };
 
 const student1: User = {
@@ -31,13 +31,18 @@ showUser(student1);
 type Product = {
   id: number;
   name: string;
-  description: string;
+  description?: string;
   price: number;
 };
 
 const product1: Product = {
   id: 1,
   name: "MotherBoard",
-  description: "China Motherboard",
   price: 10000,
+};
+const product2: Product = {
+  id: 2,
+  name: "Laptop",
+  description: "hp Laptop",
+  price: 20000,
 };
