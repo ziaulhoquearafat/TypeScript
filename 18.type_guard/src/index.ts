@@ -1,6 +1,7 @@
 // type guard : typeof, in operator and instanceof
 
 // typeof Type Guard
+// TODO we use typeof to the premetive data types
 
 function display(value: string | number): void {
   if (typeof value === "string") {
@@ -13,6 +14,7 @@ display("Hello and Welcome");
 display(493.456912359);
 
 // in operator Type Guard
+// TODO we use in operator for object
 
 type Car = {
   drive: () => void;
@@ -46,6 +48,7 @@ move(car);
 move(boat);
 
 // instanceof Type Guard
+// TODO when we work with OOP that time we use instanceof
 
 class Dog {
   bark() {
