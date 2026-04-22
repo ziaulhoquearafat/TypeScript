@@ -6,6 +6,7 @@ function printData<T extends { length: number }>(data: T) {
 printData<string>("Hello People");
 printData<number[]>([1, 2, 3, 44, 89, 125]);
 
+// constraints
 interface HasId {
   id: number;
   name: string;
