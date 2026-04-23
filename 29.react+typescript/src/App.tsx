@@ -16,7 +16,7 @@ function App() {
       name: "Alice",
       email: "alice@gmail.com",
     });
-  }, []);
+  }, [user]);
 
   return (
     <>
