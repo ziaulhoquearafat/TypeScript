@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Counter from "./components/Counter";
 import Forms from "./components/Forms";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <input type="text" value={inputValue} onChange={handleInput} />
       <p>Typed: {inputValue}</p>
       <Forms />
+      <Counter />
     </>
   );
 }
