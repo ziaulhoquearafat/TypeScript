@@ -2,7 +2,7 @@ import { useRef } from "react";
 
 const Counter = () => {
   const ref = useRef<number>(0);
-  console.log(ref);
+  // console.log(ref);
 
   const handleClick = () => {
     ref.current = ref.current + 1;
