@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getUsers } from "../services/api";
 import type { User } from "../types/user";
+import AddUser from "./AddUser";
 
 const Users = () => {
   const [users, setUsers] = useState<User[]>([]);
@@ -40,8 +41,9 @@ const Users = () => {
 
   return (
     <div>
+      <AddUser users={users} setUsers={setUsers} />
       {/* User */}
-      <div className=" shadow rounded-lg overflow-hidden my-4">
+      <div className="shadow rounded-lg overflow-hidden my-4">
         <div className="p-4 sm:p-6">
           <h2 className="font-bold text-lg text-gray-900">Users</h2>
 
