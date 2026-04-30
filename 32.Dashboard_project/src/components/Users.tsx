@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getUsers } from "../services/api";
+import { deleteUser, getUsers } from "../services/api";
 import type { User } from "../types/user";
 import AddUser from "./AddUser";
 
@@ -23,6 +23,11 @@ const Users = () => {
     };
     fetchUsers();
   }, []);
+
+  const handleDelete = async (id: number) => {
+    await deleteUser(id);
+    setUsers(users.filter((user) => user.id !== id));
+  };
 
   if (loading)
     return (
@@ -64,7 +69,10 @@ const Users = () => {
                       <button className="flex-iline text-indigo-950 bg-indigo-300 px-3 py-2 rounded font-bold cursor-pointer text-sm">
                         Update
                       </button>
-                      <button className="flex-iline text-red-950 bg-red-300 px-3 py-2 rounded font-bold cursor-pointer text-sm">
+                      <button
+                        onClick={() => handleDelete(user.id)}
+                        className="flex-iline text-red-950 bg-red-300 px-3 py-2 rounded font-bold cursor-pointer text-sm"
+                      >
                         Delete
                       </button>
                     </div>

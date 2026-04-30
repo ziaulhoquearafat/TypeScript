@@ -31,8 +31,6 @@ const AddUser = ({ users, setUsers }: AddUserProp) => {
     },
   });
 
-  console.log(newUsers);
-
   const handleAddUser = async () => {
     const createdUser = await createUser(newUsers);
     setUsers([...users, createdUser]);
